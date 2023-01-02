@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN FORM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p id="btn1">CLICK ME</p>
+	<div class="container">
+		<h1>Login Form</h1>
+		<form>
+			<input type="text" name="" placeholder="Username"><br><br>
+			<input type="password" name="" placeholder="Password">
+		</form>
+		<button class="btn">Submit</button>
+	</div>
+	<script type="text/javascript">
+		/*const wait=()=>{
+			console.log('the js part is starting here');
+			let start=new Date().getTime();
+			// console.log(new Date().getTime()-start);
+
+			while(new Date().getTime()-start<5000);
+			console.log("you can now fill values in login section");
+
+		}*/
+		// the above function is for synchronous check
+
+		//the below function is for asynchronous check
+
+		const wait=()=>{
+			console.log('js part started');
+			setTimeout(()=>{
+				console.log(`I came here after 5 sec`);
+			},5000);
+		}
+		btn1.addEventListener('click',wait);
+
+	</script>
+</body>
+</html>
